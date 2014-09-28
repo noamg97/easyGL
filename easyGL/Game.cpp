@@ -12,11 +12,13 @@ Game::Game(void) : OpenGL_Window()
 	this->antiAliasing = 4;
 }
 
-Game::~Game(void)
+void Game::LoadContent()
 {
-	//--unload resources--
-}
+	this->vertexShader = new Shader("test_vs.glsl", GL_VERTEX_SHADER);
+	this->fragmentShader = new Shader("test_fs.glsl", GL_FRAGMENT_SHADER);
+	Shader::BindShaders(2, vertexShader, fragmentShader);
 
+}
 
 void Game::Update()
 {
@@ -26,4 +28,9 @@ void Game::Update()
 void Game::Draw()
 {
 
+}
+
+Game::~Game(void)
+{
+	//--unload resources--
 }

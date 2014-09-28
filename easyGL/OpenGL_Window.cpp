@@ -49,11 +49,11 @@ bool OpenGL_Window::Initialize()
 	glEnable (GL_DEPTH_TEST); //enable depth-testing
 	glDepthFunc (GL_LESS); //depth-testing interprets a smaller value as "closer"
 	
-	//CornFlowerBlue FTW!
+	//CornFlowerBlue FTW
 	glClearColor(100/225.0f, 149/225.0f, 237/225.0f, 1);
 
 
-
+	this->LoadContent();
 
 
 	return 0;

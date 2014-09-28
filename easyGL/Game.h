@@ -7,7 +7,11 @@ public:
 	Game(void);
 	~Game(void);
 
+	void LoadContent() override;
 	void Update() override;
 	void Draw() override;
+
+private:
+	Shader* vertexShader, *fragmentShader;
 };
 

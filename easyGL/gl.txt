@@ -1,4 +1,4 @@
-GL_LOG_FILE log. local time Tue Jul 15 23:15:08 2014
+GL_LOG_FILE log. local time Sun Sep 28 21:56:43 2014
 
 starting GLFW
 3.0.4 Win32 WGL VisualC LoadLibrary(winmm)

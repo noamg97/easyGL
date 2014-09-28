@@ -1,5 +1,6 @@
 #pragma once
 #include "GLFW_Window.h"
+#include "Shader.h"
 #include "string"
 using namespace std;
 
@@ -26,6 +27,7 @@ protected:
 	int antiAliasing, minOpenGlVersion_Major, minOpenGlVersion_Minor;
 
 
+	virtual void LoadContent() = 0;
 	virtual void Update() = 0;
 	virtual void Draw() = 0;
 	

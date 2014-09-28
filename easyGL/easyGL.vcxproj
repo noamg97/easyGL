@@ -92,14 +92,21 @@
     <ClCompile Include="GLFW_Window.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OpenGL_Window.cpp" />
+    <ClCompile Include="Shader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
     <ClInclude Include="GLFW_Window.h" />
     <ClInclude Include="OpenGL_Window.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Shader.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="gl.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test_fs.glsl" />
+    <None Include="test_vs.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
