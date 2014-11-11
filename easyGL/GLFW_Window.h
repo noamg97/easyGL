@@ -1,4 +1,5 @@
 #pragma once
+#define GLEW_STATIC
 #include <GL/glew.h> //GLEW must always be included before glfw
 #include <GLFW/glfw3.h>
 #include <stdio.h>

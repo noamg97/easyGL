@@ -1,8 +1,9 @@
 #include "Game.h"
 
+Game game;
+
 int main()
 {
-	Game game;
 	if(game.Initialize())
 		return 1;
 

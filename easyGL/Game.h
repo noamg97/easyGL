@@ -1,5 +1,6 @@
 #pragma once
 #include "OpenGL_Window.h"
+#include "ShaderProgram.h"
 
 class Game : public OpenGL_Window
 {
@@ -12,6 +13,7 @@ public:
 	void Draw() override;
 
 private:
-	Shader* vertexShader, *fragmentShader;
+	Shader* mVertexShader, *mFragmentShader;
+	ShaderProgram* mDefaultProgram;
 };
 
